@@ -1,0 +1,63 @@
+# Dataset Configuration for ArSL-BLIP
+
+dataset:
+  name: "ArASL"
+  source: "Mendeley Data"
+  num_classes: 32
+  total_images: 54049
+  augmented_images: 108098
+  images_per_class: 200
+
+splits:
+  train: 0.85
+  validation: 0.15
+  random_seed: 42
+
+preprocessing:
+  image_size: [224, 224]
+  normalize:
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+  grayscale_to_rgb: true
+
+augmentation:
+  enabled: true
+  horizontal_flip: true
+  rotation_range: 15
+  brightness_jitter: 0.2
+  contrast_jitter: 0.2
+  random_crop: false
+
+arabic_letters:
+  alif: "ا"
+  baa: "ب"
+  taa: "ت"
+  thaa: "ث"
+  jeem: "ج"
+  haa: "ح"
+  khaa: "خ"
+  dal: "د"
+  thal: "ذ"
+  raa: "ر"
+  zay: "ز"
+  seen: "س"
+  sheen: "ش"
+  saad: "ص"
+  dhad: "ض"
+  taa_marbuta: "ط"
+  thaa_marbuta: "ظ"
+  ain: "ع"
+  ghain: "غ"
+  fa: "ف"
+  qaaf: "ق"
+  kaaf: "ك"
+  laam: "ل"
+  meem: "م"
+  nun: "ن"
+  ha: "ه"
+  waw: "و"
+  ya: "ي"
+  aleff: "أ"
+  la: "لا"
+  toot: "ط"
+  gaaf: "گ"

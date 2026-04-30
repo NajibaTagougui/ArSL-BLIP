@@ -1,0 +1,22 @@
+# Inference Configuration for ArSL-BLIP
+
+model:
+  model_path: "models/arsl-blip"
+  device: "cuda"        # or "cpu"
+  fp16: false           # Set true for faster GPU inference
+
+inference:
+  max_length: 50
+  num_beams: 3
+  early_stopping: true
+  confidence_threshold: 0.85
+
+output:
+  return_attention: false
+  save_visualizations: false
+  output_dir: "outputs"
+
+demo:
+  host: "0.0.0.0"
+  port: 5000
+  debug: false

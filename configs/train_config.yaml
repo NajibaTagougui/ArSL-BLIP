@@ -1,0 +1,54 @@
+# Training Configuration for ArSL-BLIP
+# Authors: Najiba Tagougui, Ansar Hani, Monji Kherallah
+# Year: 2026
+
+model:
+  name: "Salesforce/blip-image-captioning-base"
+  vision_encoder: "ViT-B/16"
+  text_encoder: "bert-base-uncased"
+  max_length: 50
+
+training:
+  learning_rate: 5.0e-5
+  batch_size: 16
+  gradient_accumulation_steps: 1
+  num_epochs: 3
+  warmup_steps: 100
+  weight_decay: 0.01
+  gradient_clip: 1.0
+  seed: 42
+
+optimizer:
+  type: "AdamW"
+  betas: [0.9, 0.999]
+  eps: 1.0e-8
+
+scheduler:
+  type: "cosine"
+  num_warmup_steps: 100
+
+data:
+  dataset_path: "data/processed"
+  train_split: 0.85
+  val_split: 0.15
+  num_workers: 4
+  pin_memory: true
+
+template:
+  prompt: "arabic sign language letter"
+  use_template_constraint: true
+
+confidence:
+  threshold: 0.85
+  reject_label: "uncertain"
+
+hardware:
+  device: "cuda"
+  fp16: true
+  compile: false
+
+logging:
+  log_every: 50
+  save_every: 1
+  output_dir: "checkpoints"
+  run_name: "arsl-blip-v1"
