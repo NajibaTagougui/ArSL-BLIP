@@ -19,7 +19,7 @@ This repository contains the code, models, and documentation for our paper:
 **"Controllable and Interpretable Arabic Sign Language Recognition: A Generative Vision-Language Framework for Assistive Technology"**  
 *Under review at Multimedia Tools and Applications (Springer), 2026*
 
-**Authors**: Najiba Tagougui\*, Ansar Hani, Monji Kherallah  
+**Authors**: Ansar Hani, Najiba Tagougui\*,  Monji Kherallah  
 (\*Corresponding Author — University of Sfax, Tunisia)
 
 ### Key Features
