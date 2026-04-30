@@ -242,7 +242,7 @@ If you use this code or model in your research, please cite:
 ```bibtex
 @article{tagougui2026arslblip,
   title={Controllable and Interpretable Arabic Sign Language Recognition: A Generative Vision-Language Framework for Assistive Technology},
-  author={Tagougui, Najiba and Hani, Ansar and Kherallah, Monji},
+  author={Hani, Ansar,Tagougui, Najiba and  and Kherallah, Monji},
   journal={Multimedia Tools and Applications},
   year={2026},
   note={Under review},
