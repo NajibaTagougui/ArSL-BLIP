@@ -258,7 +258,7 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 ## 📧 Contact
 
-**Corresponding Author**: Najiba Tagougui — tag.najiba@gmail.com  
+**Corresponding Author**: Najiba Tagougui — najiba.tagougui@isims.usf.tn
 **GitHub Issues**: [Open an issue](https://github.com/NajibaTagougui/ArSL-BLIP/issues)
 
 ## 🙏 Acknowledgments
