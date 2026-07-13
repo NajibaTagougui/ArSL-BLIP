@@ -78,7 +78,6 @@ python training/train.py --resume checkpoints/latest.pt
 |---|---|
 | Learning rate | 5e-5 |
 | Batch size | 16 (effective) |
-| Epochs | 3 |
 | Optimizer | AdamW |
 | Weight decay | 0.01 |
 | Gradient clipping | 1.0 |
